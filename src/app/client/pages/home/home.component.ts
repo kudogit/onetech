@@ -3,10 +3,11 @@ import { ScriptLoaderService } from '../../../helpers/script-loader.service';
 
 @Component({
     selector:'app-client-home',
-    templateUrl:'home.component.html'
+    templateUrl:'home.component.html',
+    styleUrls:['./home.component.css']
 })
 
-export class HomeComponent implements OnInit, AfterViewInit{
+export class HomeComponent implements OnInit , AfterViewInit{
     constructor(private _script: ScriptLoaderService) {
 
     }
@@ -14,15 +15,17 @@ export class HomeComponent implements OnInit, AfterViewInit{
     ngOnInit() {
 
     }
-    ngAfterViewInit() {
+
+    ngAfterViewInit(): void {
         this._script.loadScripts('app-client-home',
-            [
-                "../../../assets/js/jquery.min.js",
-                "../../../assets/js/bootstrap.min.js",
-                "../../../assets/js/slick.min.js",
-                "../../../assets/js/nouislider.min.js",
-                "../../../assets/js/jquery.zoom.min.js",
-                "../../../assets/js/main.js"
-            ]);
+        [
+            "assets/js/jquery.min.js",
+            "assets/js/bootstrap.min.js",
+            "assets/js/slick.min.js",
+            "assets/js/nouislider.min.js",
+            "assets/js/jquery.zoom.min.js",
+            "assets/js/main.js"
+        ]);
     }
+   
 }
