@@ -17,18 +17,12 @@ export class HomeComponent implements OnInit, AfterViewInit{
     ngAfterViewInit() {
         this._script.loadScripts('app-client-home',
             [
-            '../../../assets/js/jquery-3.3.1.min.js',
-            '../../../assets/styles/bootstrap4/popper.js',
-             '../../../assets/styles/bootstrap4/bootstrap.min.js',
-            '../../../assets/plugins/greensock/TweenMax.min.js',
-             '../../../assets/plugins/greensock/TimelineMax.min.js',
-             '../../../assets/plugins/scrollmagic/ScrollMagic.min.js',
-            '../../../assets/plugins/greensock/animation.gsap.min.js',
-            '../../../assets/plugins/greensock/ScrollToPlugin.min.js',
-             '../../../assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js',
-             '../../../assets/plugins/slick-1.8.0/slick.js',
-             '../../../assets/plugins/easing/easing.js',
-            '../../../assets/js/custom.js',
+                "../../../assets/js/jquery.min.js",
+                "../../../assets/js/bootstrap.min.js",
+                "../../../assets/js/slick.min.js",
+                "../../../assets/js/nouislider.min.js",
+                "../../../assets/js/jquery.zoom.min.js",
+                "../../../assets/js/main.js"
             ]);
     }
 }
