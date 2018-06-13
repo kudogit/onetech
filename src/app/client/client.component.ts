@@ -1,22 +1,21 @@
-import { Component, ViewEncapsulation, AfterViewInit , OnInit } from '@angular/core';
-import { ScriptLoaderService } from '../helpers/script-loader.service';
+import { Component, ViewEncapsulation, AfterViewInit, OnInit } from '@angular/core';
+import { ScriptLoaderService } from '../_services/script-loader.service';
+
 
 @Component({
-    selector:'app-client',
-    templateUrl:'client.component.html',
-    encapsulation: ViewEncapsulation.None,
-    styleUrls:['client.component.css']
+  selector: 'app-client',
+  templateUrl: 'client.component.html',
+  encapsulation: ViewEncapsulation.None,
 })
 
-export class ClientComponent implements OnInit{
-    
-   
-    constructor(private _scriptLoader : ScriptLoaderService){
-      
-    }
+export class ClientComponent implements OnInit {
 
-    ngOnInit(): void {
-    }
 
+  constructor(private _scriptLoader: ScriptLoaderService) {
+
+  }
+
+  ngOnInit(){
     
+  }
 }

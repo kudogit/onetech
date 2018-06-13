@@ -1,6 +1,5 @@
 (function($) {
   "use strict"
-
   // NAVIGATION
   var responsiveNav = $('#responsive-nav'),
     catToggle = $('#responsive-nav .category-nav .category-header'),
