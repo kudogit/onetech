@@ -5,14 +5,15 @@ import { AuthGuard } from '../auth/_guards/auth.guard';
 
 const routes: Routes = [
     {
-        "path": "admin",
+        "path": "",
         "component": ThemeComponent,
         "canActivate": [AuthGuard],
         "children": [
             {
-                "path": "",
+                "path": "admin",
                 "loadChildren": ".\/pages\/default\/index\/index.module#IndexModule"
             },
+            { path: '', redirectTo: 'admin', pathMatch: 'full' }
         ]
     }
 ];
