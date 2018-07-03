@@ -4,6 +4,8 @@ import { HttpModule } from '@angular/http';
 import { ClientComponent } from './client.component';
 import { ClientRoutingModule } from './client-routing.module';
 import { HomeModule } from './pages/home/home.module';
+import { ScriptLoaderService } from '../_services/script-loader.service';
+
 
 
 @NgModule({
@@ -14,7 +16,7 @@ import { HomeModule } from './pages/home/home.module';
   declarations: [
     ClientComponent,
   ],
-  providers: [],
+  providers: [ScriptLoaderService],
   bootstrap: [ClientComponent],
 })
 export class ClientModule { }
